@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 const Footer = ({ count }) => <p>Você tem {count} favoritos</p>;
 
 const mapStateToProps = state => ({
-  count: state.favorites.length
+  count: state.favorites.data.length
 });
 
 Footer.propTypes = {
